@@ -1,0 +1,32 @@
+{
+  "name": "election-mcp",
+  "version": "0.1.0",
+  "description": "A standalone MCP server for Indian Election Commission data: Lok Sabha results, voter ID checks, and candidate/MP lookups.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "india",
+    "election",
+    "eci",
+    "lok-sabha",
+    "voter",
+    "candidate"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "election-mcp": "./server.js"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
